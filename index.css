@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./assets/font_mist.ttf);
+}
+:root {
+    --color1: #be171b;
+    --color2: #7c0c3e;
+    --color3: #000000;
+    --color4: rgb(51, 51, 51);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "font-1";
+}
+body {
+    background: url(./assets/bg.jpg) fixed center/cover;
+}
+.liens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+    font-size: 1.7rem;
+    margin-right: 1%;
+}
+.liens a {
+    border-radius: 8%;
+    border: 3px solid var(--color1);
+    color: var(--color1);
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.liens a:hover {
+    background-color: var(--color4);
+    color: var(--color2);
+    transform: scale(1.2);
+}
+.liens a:visited {
+    color: var(--color2);
+}
+.mist {
+    width: 50%;
+    margin: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.intro {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 4%;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.308);
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.308);
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    font-weight: 600;
+}
+.RS {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+}
